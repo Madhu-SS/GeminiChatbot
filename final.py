@@ -11,14 +11,13 @@ st.set_page_config(page_title="Potentiam Chatbot", page_icon=":robot_face:")
 # Streamlit app title
 st.title('Potentiam Chatbot')
 
-# Main chat loop
-while True:
-    # User input
-    user_input = st.text_input("You:")
 
-    # Send button
-    if st.button("Send"):
-        # Display user message
-        result=qa_chain.invoke(user_input)
-        response=result['result']
-        st.write(response)
+text = st.text_input("Please enter your Query")
+if st.button('Submit'):
+    if not text:
+        st.warning("Please enter your Query")
+    else:
+        with st.spinner("Please wait, it may take some time to run..."):
+            result=qa_chain.invoke(user_input)
+            response=result['result']
+            st.write(response)
