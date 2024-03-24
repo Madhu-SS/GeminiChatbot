@@ -9,7 +9,7 @@ st.set_page_config(page_title="Potentiam Chatbot", page_icon=":robot_face:")
 # Function to display chat messages
 
 # Streamlit app title
-st.title('Potentiam Chatbot')
+st.title('Welcome To Potentiam')
 
 
 text = st.text_input("Please enter your Query")
