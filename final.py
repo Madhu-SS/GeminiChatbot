@@ -14,7 +14,7 @@ st.title('Potentiam Chatbot')
 # Main chat loop
 while True:
     # User input
-    user_input = st.text_input("You:", "")
+    user_input = st.text_input("You:")
 
     # Send button
     if st.button("Send"):
