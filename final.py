@@ -18,6 +18,6 @@ if st.button('Submit'):
         st.warning("Please enter your Query")
     else:
         with st.spinner("Please wait, it may take some time to run..."):
-            result=qa_chain.invoke(user_input)
+            result=qa_chain.invoke(text)
             response=result['result']
             st.write(response)
