@@ -1,0 +1,7 @@
+unstructured
+google-generativeai
+langchain
+python-dotenv
+streamlit
+langchain-google-genai
+faiss_cpu
