@@ -3,12 +3,8 @@ import streamlit as st
 from src.model import qa_chain
 
 
-# Set page title and icon
 st.set_page_config(page_title="Potentiam Chatbot", page_icon=":robot_face:")
 
-# Function to display chat messages
-
-# Streamlit app title
 st.title('Welcome To Potentiam')
 
 
