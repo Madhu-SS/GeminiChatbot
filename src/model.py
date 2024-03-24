@@ -45,7 +45,7 @@ prompt = PromptTemplate(template=custom_prompt_template,
 
 qa_chain = RetrievalQA.from_chain_type(llm=llm,
                                        chain_type='stuff',
-                                       retriever=db.as_retriever(search_kwargs={'k': 2}),
+                                       retriever=db.as_retriever(search_kwargs={'k': 4}),
                                        return_source_documents=True,
                                        chain_type_kwargs={'prompt': prompt}
                                        )
