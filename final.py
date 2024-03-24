@@ -20,4 +20,4 @@ if st.button('Submit'):
         with st.spinner("Please wait, it may take some time to run..."):
             result=qa_chain.invoke(text)
             response=result['result']
-            st.write(response)
+            st.text(response)
