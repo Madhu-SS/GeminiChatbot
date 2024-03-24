@@ -3,11 +3,12 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
-from data import DataLoader
+from src.data import DataLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores.faiss import FAISS
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
+import sys
 
 
 load_dotenv()
@@ -51,7 +52,8 @@ qa_chain = RetrievalQA.from_chain_type(llm=llm,
 
 def chat(query):
     result=qa_chain.invoke(query)
-    print(result['result'])
+    response=result['result']
+    return response
 # query='tell me about Potentiam'
 # result=qa_chain.invoke(query)
 # print(result)

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: chatbot
+Version: 0.0.1
+Author: madhu s s
+Author-email: madhugowda426@gmail.com
+Requires-Dist: python-magic-bin==0.4.14
+Requires-Dist: libmagic
+Requires-Dist: unstructured
+Requires-Dist: google-generativeai
+Requires-Dist: langchain
+Requires-Dist: python-dotenv
+Requires-Dist: streamlit
+Requires-Dist: langchain-google-genai
+Requires-Dist: faiss_cpu
