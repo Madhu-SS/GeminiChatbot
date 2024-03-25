@@ -30,7 +30,7 @@ text_chunks=text_splitter.split_documents(data)
 db = FAISS.from_documents(text_chunks, embeddings)
 db.save_local("vectorstore")
 
-custom_prompt_template = """Use the following pieces of information to answer the user's question.
+custom_prompt_template = """You are the Potentiam Company chatbot. Use the following pieces of information to answer the user's question.
 If you don't know the answer, just say that you don't know, don't try to make up an answer.
 
 Context: {context}
